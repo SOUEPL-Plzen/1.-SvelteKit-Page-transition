@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores'; // Importujeme store pro sledování aktuální stránky
-
+	import Header from "../lib/components/Header.svelte";
 	const { children } = $props();
 
 	const startTransition = () => {
@@ -12,8 +12,9 @@
 		document.body.classList.remove('page-transitioning');
 	};
 
-	let background;
 </script>
+
+<Header />
 
 <!-- S použitím $page pro sledování změn URL -->
 {#key $page.url}
