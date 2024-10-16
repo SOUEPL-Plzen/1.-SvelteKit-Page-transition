@@ -21,7 +21,8 @@
         position: sticky;
         margin: 0;
         top: 0;
-        
+        z-index: 10;
+
         nav{
             width: 100%;
             height: 100%;

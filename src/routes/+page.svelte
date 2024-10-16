@@ -2,7 +2,7 @@
     <div class="hero-background" >
         <img src="https://lindastade.com/wp-content/uploads/2022/10/ShutterstockBasic_489605152-1280x640.jpg" alt="">
     </div>
-        <img src="https://www.souepl.cz/wp-content/uploads/2016/10/logo_stredni-1.jpg" alt="">
+        <img src="https://www.souepl.cz/wp-content/uploads/2022/07/logo_velke_b-3.png" alt="">
 
     <h1>Střední odborné učiliště, elektrotechnické Plzeň</h1>
 
@@ -14,7 +14,40 @@
     </div>
 </section>
 
-<style lang="scss">
+<section class="about">
+    <h1>Proč studovat u nás?</h1>
+    <div class="about-content">
+        <img src="https://blogs.staffs.ac.uk/student-blogs/files/2016/08/iStock_28423686_MEDIUM.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat hic iure voluptatibus, quam ut a reprehenderit provident ea debitis voluptatem neque praesentium quas. Nulla temporibus nemo dolore, doloribus veritatis rerum.
+        </p>
+    </div>
+</section>
+
+<style>
+    .about{
+        width: 100%;
+        max-width: 1300px;
+        margin: 36px 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .about h1{
+        text-align: center;
+    }
+
+    .about .about-content{
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+        align-items: center;
+    }
+    .about .about-content img{
+        width: 100%;
+        max-width: 450px;
+    }
+
     .hero {
         width: 100%;
         min-height: calc(100vh - 100px);
@@ -24,6 +57,7 @@
         align-items: center;
         text-align: center;
         position: relative;
+        flex-wrap: wrap;
         color: white;
     }
 
@@ -33,7 +67,7 @@
         z-index: -1;
         width: 100%;
         height: 100vh;
-        background-color: rgba(72, 72, 80, 0.631);
+        background-color: rgba(22, 21, 21, 0.631);
     }
 
     .hero .hero-background img{
@@ -46,12 +80,13 @@
 
 
     .hero img {
-        width: 250px;
+        width: 450px;
     }
 
     .hero-buttons {
         display: flex;
         gap: 36px;
+        flex-wrap: wrap;
     }
 
     .hero-buttons a {
@@ -77,13 +112,13 @@
     }
 
     #ghost:hover {
-        color: white;
-        background: red;
+        color: black;
+        background: white;
         border: 1px solid rgba(0, 0, 0, 0);
     }
 
     .hero-buttons a:hover {
-        color: white;
-        background: red;
+        color: black;
+        background: white;
     }
 </style>
